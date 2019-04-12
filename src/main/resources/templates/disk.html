@@ -13,7 +13,10 @@
     <script th:src="@{/elfinder/ace/ext-modelist.js}" type="text/javascript" charset="utf-8"></script>
     <script th:src="@{/elfinder/ace/ext-settings_menu.js}"></script>
     <script th:src="@{/elfinder/jquery-ui-1.12.1.custom/jquery-ui.js}"></script>
-    <script type="text/javascript" charset="utf-8">
+</head>
+<body>
+<div id="elfinder"></div>
+<script type="text/javascript" charset="utf-8">
         // 使用onload加载，否则菜单会不出现
         window.onload = function() {
             elFinder.prototype.loadCss('/elfinder/jquery-ui-1.12.1.custom/jquery-ui.css');
@@ -211,10 +214,5 @@
             });
         };
     </script>
-</head>
-<body>
-
-<div id="elfinder"></div>
-
 </body>
 </html>

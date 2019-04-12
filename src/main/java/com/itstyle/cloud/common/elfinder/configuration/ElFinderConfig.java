@@ -38,8 +38,6 @@ public class ElFinderConfig {
         return commandFactory;
     }
 
-
-
     @Bean(name = "elfinderStorageFactory")
     public ElfinderStorageFactory getElfinderStorageFactory() {
         DefaultElfinderStorageFactory elfinderStorageFactory = new DefaultElfinderStorageFactory();
@@ -49,7 +47,6 @@ public class ElFinderConfig {
 
     @Bean(name = "elfinderStorage")
     public ElfinderStorage getElfinderStorage() {
-
         DefaultElfinderStorage defaultElfinderStorage = new DefaultElfinderStorage();
 
         // creates thumbnail
