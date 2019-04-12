@@ -33,7 +33,7 @@ public class Application  extends SpringBootServletInitializer  {
 	
 	public static void main(String[] args) throws InterruptedException {
 		SpringApplication.run(Application.class, args);
-		logger.info("云盘服务 ");
+		logger.info("柒云盘服务 ");
 	}
 	@Resource
     private void configureThymeleafStaticVars(ThymeleafViewResolver viewResolver) {
