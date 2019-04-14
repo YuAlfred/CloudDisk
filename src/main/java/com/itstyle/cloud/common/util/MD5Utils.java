@@ -86,7 +86,7 @@ public class MD5Utils {
 
 	public static void main(String[] args) {
 		// 原密码
-		String plaintext = "admin20190909";
+		String plaintext = "admin";
 		// 获取加盐后的MD5值
 		String ciphertext = MD5Utils.getSaltMD5(plaintext);
 		System.out.println("加盐后MD5：" + ciphertext);

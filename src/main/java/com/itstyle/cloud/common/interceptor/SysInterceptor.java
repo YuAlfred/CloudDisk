@@ -2,6 +2,8 @@ package com.itstyle.cloud.common.interceptor;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.itstyle.cloud.common.entity.SysUser;
+import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -15,7 +17,7 @@ public class SysInterceptor  implements HandlerInterceptor {
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response,
 			Object handler) throws Exception {
-	/*	if (handler instanceof HandlerMethod){
+		if (handler instanceof HandlerMethod){
 			SysUser user =  (SysUser) request.getSession().getAttribute("user");
 			if(user==null){
 				response.sendRedirect("/");
@@ -25,8 +27,7 @@ public class SysInterceptor  implements HandlerInterceptor {
 			}
 		}else{
 			return true;
-		}*/
-		return true;
+		}
 	}
 
 	@Override

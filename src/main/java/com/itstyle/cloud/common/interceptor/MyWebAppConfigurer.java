@@ -9,7 +9,7 @@ public class MyWebAppConfigurer extends WebMvcConfigurerAdapter {
  
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
-		String[] patterns = new String[] {"/login.shtml","/login","/logout"};
+		String[] patterns = new String[] {"/login.shtml","/user/login","/logout"};
 		registry.addInterceptor(new SysInterceptor())
 		                         .addPathPatterns("/**")
 		                         .excludePathPatterns(patterns);

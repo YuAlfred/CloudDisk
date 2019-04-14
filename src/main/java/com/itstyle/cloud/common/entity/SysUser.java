@@ -20,21 +20,22 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @Table(name = "sys_user")
 @JsonIgnoreProperties(value = {"hibernateLazyInitializer", "handler"})
 public class SysUser {
-	
-    private Integer id;
-    private String username;
-    private String password;
-    private String email;
-    private String roleCode;
-    private String roleName;
-    private Timestamp gmtCreate;
-    private Timestamp gmtUpdate;
-    private Integer userCreate;
-    
+
+	private Integer id;
+	private String username;
+	private String password;
+	private String nickname;
+	private String email;
+	private String roleCode;
+	private String roleName;
+	private Timestamp gmtCreate;
+	private Timestamp gmtUpdate;
+	private Integer userCreate;
+
 	public SysUser() {
 		super();
 	}
-	
+
 	public SysUser(Integer id, String username, String password, String email, String roleCode, String roleName) {
 		super();
 		this.id = id;
@@ -90,6 +91,13 @@ public class SysUser {
 		this.roleName = roleName;
 	}
 
+	public String getNickname() {
+		return nickname;
+	}
+	@Column(name = "nickname", nullable = false)
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
+	}
 	@Column(name = "gmt_create", nullable = false)
 	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
 	public Timestamp getGmtCreate() {
