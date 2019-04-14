@@ -24,6 +24,25 @@
 
 ![输入图片说明](https://images.gitee.com/uploads/images/2019/0412/213816_5bf1828e_87650.png "5.png")
 
+## 参数配置
+
+
+```
+# 执行类，内部调用，实现前端相关功能
+file-manager.command=com.itstyle.cloud.common.elfinder.command
+file-manager.thumbnail.width=80
+file-manager.volumes[0].Node=
+file-manager.volumes[0].source=fileSystem
+file-manager.volumes[0].alias=file
+# 文件存放目录，可以自定义
+file-manager.volumes[0].path=D:/cloudFile
+file-manager.volumes[0]._default=true
+file-manager.volumes[0].locale=
+file-manager.volumes[0].constraint.locked=false
+file-manager.volumes[0].constraint.readable=true
+file-manager.volumes[0].constraint.writable=true
+```
+
 
 ## 文件管理
 
@@ -36,7 +55,6 @@
 ## 演示
 
  
-https://blog.52itstyle.vip
+https://cloud.52itstyle.vip/
  
-
 
