@@ -4,6 +4,18 @@
 
 基于SpringBoot+elFinder搭建的私有云盘服务
 
+## 推荐
+
+支付服务：https://gitee.com/52itstyle/spring-boot-pay
+
+任务调度：https://gitee.com/52itstyle/spring-boot-quartz
+
+邮件服务：https://gitee.com/52itstyle/spring-boot-mail
+
+搜索服务：https://gitee.com/52itstyle/spring-boot-elasticsearch
+
+私人网盘：https://gitee.com/52itstyle/spring-boot-CloudDisk
+
 ## 环境搭建
 
 | 软件 | 版本  | 功能|   地址|
